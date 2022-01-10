@@ -1,0 +1,25 @@
+#success-msg{
+    height:40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#success-msg h3{
+    font-size:1.8rem;
+    color:rgb(255,94,0);
+    font-weight:bold;
+}
+#name{
+    color:black;
+}
+#success-msg p{
+    font-size:1.3rem;
+    font-weight:300;
+    text-align:center;
+}
+#success-msg h4{
+    font-size:1.6rem;
+    color:rgb(255,94,0);
+    font-weight:bold;
+}

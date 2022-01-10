@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+        <title>GWOC | REGISTRATION</title>
+    <meta name="description" content="GirlScript Winter of Contributing is a
+    three-month programme run by the
+    GirlScript Foundation during the winters
+    with the purpose of empowering people to
+    share their knowledge and ideas in order
+    to improve technical abilities and gain
+    valuable experience in the field of tech
+    education. Throughout the programme,
+    participants contribute to a variety of
+    themes under the supervision of an
+    expert facilitator">
+
+    <!-- META -->
+    <meta name="application-name" content="GirlScript Foundation India">
+    <meta name="author" content="GirlScript Winter of Contributing">
+    <meta name="msapplication-tooltip" content="GirlScript Winter of Contributing is a
+    three-month programme run by the
+    GirlScript Foundation during the winters
+    with the purpose of empowering people to
+    share their knowledge and ideas in order
+    to improve technical abilities and gain
+    valuable experience in the field of tech
+    education.">
+    <meta name="apple-mobile-web-app-title" content="GirlScript Winter of Contributing">
+    <meta name="og:site_name" content="gwoc.tech" />
+    <meta name="og:title" content="GirlScript Winter of Contributing" />
+    <meta name="og:url" content="https://gwoc.girlscript.tech/" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav style="align-items: center;">
+        <div class="logo">
+            <a href="./">
+                <img src="/assets/logo-new.png" alt="">
+            </a>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a class="nav-underline" href="./">HOME</a></li>
+            <li><a class="nav-underline-about" href="/#about">ABOUT</a></li>
+            <li><a class="nav-underline-contact" href="#contact">CONTACT</a></li>
+            <li><a class="nav-underline-team" href="/team">TEAM</a></li>
+            <li><a class="nav-underline" href="/event">EVENT</a></li>
+            <li><a class="register" href="/#register"><button class="register-btn">REGISTER</button></a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <a href="https://www.linkedin.com/company/girlscript-winter-of-contributing/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/girlscriptwinterofcontributing/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/girlscriptwoc" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </span>
+        </ul>
+    </nav>
+
+    <!-- Registration Form Design -->
+    <section id="form">
+        <h3 id="form-heading">Registration for contributors </h3>
+        <p>Whether you're a newbie
+            or a seasoned pro, GirlScript Winter of Contributing will give you a taste of what it's
+            like to contribute to a content repository. For three months, you will work on your
+            selected domains under the supervision of experienced supervisors</p>
+        <form action="/contributorSuccess" method="post">
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="contact">Phone Number</label><br>
+                <input type="tel" name="contact" id="contact" required>
+            </div>
+
+            <div>
+                <label for="college-name">College/School Name</label><br>
+                <input type="text" name="college" id="college-name" required>
+            </div>
+
+            <div>
+                <label for="year">Year</label><br>
+                <select name="year" id="year">
+                    <option value="default" selected disabled>Choose your current year</option>
+                    <option value="first">First</option>
+                    <option value="second">Second</option>
+                    <option value="third">Third</option>
+                    <option value="fourth">Fourth</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="stream">Stream</label><br>
+                <input type="text" name="stream" id="stream">
+            </div>
+
+            <div class="domain-options">
+                <label for="domain">Your preferred domain</label>
+                <div class="left-options">
+                    <div>
+                        <input type="checkbox" id="android-flutter" name="domain" value="Android Development with Flutter">
+                        <label for="android-flutter">Android Development with Flutter</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="android-java" name="domain" value="Android Development with Java">
+                        <label for="android-java">Android Development with Java</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="android-kotlin" name="domain" value="Android Development with Kotlin">
+                        <label for="android-kotlin">Android Development with Kotlin</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="backend-php" name="domain" value="Backend Development with PHP">
+                        <label for="backend-php">Backend Development with PHP</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="c/c++" name="domain" value="C/C++">
+                        <label for="c/c++">C/C++</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="comp-coding" name="domain" value="Competitive Coding">
+                        <label for="comp-coding">Competitive Coding</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cyber-security" name="domain" value="Cyber Security">
+                        <label for="cyber-security">Cyber Security</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dsa" name="domain" value="Data Structures and Algorithm">
+                        <label for="dsa">Data Structures and Algorithm</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dsr" name="domain" value="Data Science with R">
+                        <label for="dsr">Data Science with R</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dsp" name="domain" value="Data Science with Python">
+                        <label for="dsp">Data Science with Python</label>
+                    </div>
+                </div>
+
+                <div class="right-options">
+                    <div>
+                        <input type="checkbox" id="golang" name="domain" value="Golang">
+                        <label for="golang">Golang</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interview-prep" name="domain" value="Interview Preparation">
+                        <label for="interview-prep">Interview Preparation</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="java" name="domain" value="Java">
+                        <label for="java">Java</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="javascript" name="domain" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mern" name="domain" value="MERN">
+                        <label for="mern">MERN</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="open-source" name="domain" value="Open Source">
+                        <label for="open-source">Open-Source</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rust" name="domain" value="Rust">
+                        <label for="rust">Rust</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="stats" name="domain" value="Statistics">
+                        <label for="stats">Statistics</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ui-ux" name="domain" value="UI/UX">
+                        <label for="ui-ux">UI/UX</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contribution-type">
+                <label for="contribution-type">Preferred way of Contributing</label>
+                <div>
+                    <input type="checkbox" id="video" name="contribution" value="Video">
+                    <label for="video">Video</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="audio" name="contribution" value="Audio">
+                    <label for="audio">Audio</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="doc" name="contribution" value="Document">
+                    <label for="doc">Document</label>
+                </div>
+            </div>
+
+            <div class="open-source-knowledge">
+                <label for="openSource">Do you have any previous experience in open-source?</label>
+                <div>
+                    <input type="radio" id="yes" name="openSource" value="yes">
+                    <label for="openSource">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="no" name="openSource" value="no">
+                    <label for="openSource">No</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="whyContribute">How will GWOC be beneficial for you?</label>
+                <textarea name="whyContribute" id="whyContribute"></textarea>
+            </div>
+
+            <button type="submit" value="submit" id="register-contributor">SUBMIT</button>
+        </form>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+        <div class="contact-heading-section">
+            <div class="contact-heading">
+                The <span style="color: #AB4806;"> World's Largest </span> Multilingual Content <br>
+                Repository, <span style="color: #AB4806;"> Open </span> for Everyone.
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/company/girlscript-winter-of-contributing/" target="_blank"
+                    class="icon1">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/girlscriptwinterofcontributing/" target="_blank" class="icon2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/girlscriptwoc" target="_blank" class="icon3">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="contact-links">
+            <img class="contact-logo" src="/assets/favicon.png" alt="">
+            <ul class="quick-links">
+                <h3>QUICK LINKS</h3>
+                <a href="/#faq">
+                    <li>FAQ</li>
+                </a>
+                <a href="/#register">
+                    <li>Register</li>
+                </a>
+                <a href="/codeofconduct" target="_blank">
+                    <li>Code Of Conduct</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="contact-copyright">
+        <p>Copyright © 2021 GirlScript Winter of Contributing. All rights reserved.</p>
+    </div>
+
+    <!-- AOS Tag -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            once: false,
+
+        });
+    </script>
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
