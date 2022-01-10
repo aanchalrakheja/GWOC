@@ -3,9 +3,9 @@ var mongoose=require("mongoose");
 const { dirname } = require("node:path/posix");
 var nodemailer = require('nodemailer');
 var uniqueNameModule=require('unique-names-generator');
-var totalContributors;
-var totalMentors;
-var totalSupervisors;
+var totalContributors=0;
+var totalMentors=0;
+var totalSupervisors=0;
 // import { uniqueNamesGenerator, names } from 'unique-names-generator';
 
 const uri = "mongodb+srv://aanchal:aanchal29@cluster0.xrgu2.mongodb.net/gwoc?retryWrites=true&w=majority";
