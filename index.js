@@ -1,6 +1,8 @@
+require('dotenv').config();
 // require the express module
 var express=require("express");
 const bodyparser = require('body-parser');
+const port = process.env.PORT || 3000;
 
 // fire the express function
 var app=express();
@@ -18,9 +20,9 @@ app.set("view engine","ejs");
 // use static files
 app.use(express.static("public"));
 
-// listen to port 3000
-app.listen(3000);
-console.log("You are listening to port 3000");
+// listen to port
+app.listen(port);
+console.log(`You are listening to port ${port}`);
 
 
 
