@@ -65,38 +65,37 @@ var transporter = nodemailer.createTransport({
 module.exports=function(app){
     // get home page
     app.get("/",function(req,res){
-        // contributors.find().count(async function(err,count)
-        // {
-        //     if(err)
-        //     {
-        //         console.log(err);
-        //     }
-        //     else{
-        //         totalContributors=count;
-        //     }
-        // });
-        // mentors.find().count(async function(err,count)
-        // {
-        //     if(err)
-        //     {
-        //         console.log(err);
-        //     }
-        //     else{
-        //         totalMentors=count;
-        //     }
-        // });
-        // supervisors.find().count(function(err,count)
-        // {
-        //     if(err)
-        //     {
-        //         console.log(err);
-        //     }
-        //     else{
-        //         totalSupervisors=count;
-        //     }
-        // });
-        // res.render("home",{totalContributors:totalContributors,totalMentors:totalMentors,totalSupervisors:totalSupervisors});
-        res.render("home");
+        contributors.find().count(async function(err,count)
+        {
+            if(err)
+            {
+                console.log(err);
+            }
+            else{
+                totalContributors=count;
+            }
+        });
+        mentors.find().count(async function(err,count)
+        {
+            if(err)
+            {
+                console.log(err);
+            }
+            else{
+                totalMentors=count;
+            }
+        });
+        supervisors.find().count(function(err,count)
+        {
+            if(err)
+            {
+                console.log(err);
+            }
+            else{
+                totalSupervisors=count;
+            }
+        });
+        res.render("home",{totalContributors:totalContributors,totalMentors:totalMentors,totalSupervisors:totalSupervisors});
     });
 
     app.get("/team",function(req,res){
