@@ -1,3 +1,4 @@
+require('dotenv').config();
 // require the mongoose package to connect to mongoDb database
 var mongoose=require("mongoose");
 var nodemailer = require('nodemailer');
@@ -5,7 +6,7 @@ var totalContributors=0;
 var totalMentors=0;
 var totalSupervisors=0;
 
-const uri = "mongodb+srv://aanchal:aanchal29@cluster0.xrgu2.mongodb.net/gwoc?retryWrites=true&w=majority";
+const uri = process.env.db_url || "mongodb+srv://aanchal:aanchal29@cluster0.xrgu2.mongodb.net/gwoc?retryWrites=true&w=majority";
 
 // connecting to the database
 mongoose.connect(uri);
