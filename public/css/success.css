@@ -1,9 +1,9 @@
 #success-msg{
-    height:40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2rem;
 }
 #success-msg h3{
     font-size:1.8rem;

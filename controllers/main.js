@@ -1,15 +1,11 @@
 // require the mongoose package to connect to mongoDb database
 var mongoose=require("mongoose");
-const { dirname } = require("node:path/posix");
 var nodemailer = require('nodemailer');
-var uniqueNameModule=require('unique-names-generator');
 var totalContributors=0;
 var totalMentors=0;
 var totalSupervisors=0;
-// import { uniqueNamesGenerator, names } from 'unique-names-generator';
 
 const uri = "mongodb+srv://aanchal:aanchal29@cluster0.xrgu2.mongodb.net/gwoc?retryWrites=true&w=majority";
-console.log(__dirname);
 
 // connecting to the database
 mongoose.connect(uri);
@@ -68,7 +64,7 @@ var transporter = nodemailer.createTransport({
 module.exports=function(app){
     // get home page
     app.get("/",function(req,res){
-        contributors.find().count(function(err,count)
+        contributors.find().count(async function(err,count)
         {
             if(err)
             {
@@ -78,7 +74,7 @@ module.exports=function(app){
                 totalContributors=count;
             }
         });
-        mentors.find().count(function(err,count)
+        mentors.find().count(async function(err,count)
         {
             if(err)
             {
@@ -98,7 +94,6 @@ module.exports=function(app){
                 totalSupervisors=count;
             }
         });
-
         res.render("home",{totalContributors:totalContributors,totalMentors:totalMentors,totalSupervisors:totalSupervisors});
     });
 
